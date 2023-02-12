@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        .container {
+        max-width: 500px;
+        margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;color: black;"><u>Currency Converter</u></h1>
+    <form method="post", action="/">
+        <div class = "container">
+
+            <input type="number" placeholder="Enter amount" name="amount" id="amount">
+            <select name="currency_code" id="currency_code">
+                <option value="">Choose Currency</option>
+                <option value="USD">Dolar Amerykański</option>
+                <option value="AUD">Dolar Australijski</option>
+                <option value="CAD">Dolar Kanadyjski</option>
+                <option value="EUR">Euro</option>
+                <option value="HUF">Forint</option>
+                <option value="CHF">Frank Szwajcarski</option>
+                <option value="GBP">Funt Szterling</option>
+                <option value="JPY">Jen</option>
+                <option value="CZK">Korona Czeska</option>
+                <option value="DKK">Korona Duńska</option>
+                <option value="NOK">Korona Norweska</option>
+                <option value="SEK">Korona Szwedzka</option>
+                <option value="XDR">SDR</option>
+            </select><br>
+
+            <h2 style="text-align: center;"><input type="submit" style="width: 60px;height: 30px;" value="Convert"></h2>
+            <label for="result" >TOTAL COST IN PLN:</label>
+            <input type="text" placeholder="Result" name="result" id="result" value="{{result}}">
+            
+        </div>
+    </form>
+</body>
+</html>
